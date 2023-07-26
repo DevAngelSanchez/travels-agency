@@ -1,0 +1,34 @@
+extends ./layouts/index
+
+block slider
+  .slider
+    h1 Rio de Janeiro
+    em aventura
+
+block content
+  main.container.mt-5
+    h2.text-center.mb-5 About Us
+    .row.mb-5
+      .col-md-6
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum nobis hic odio laboriosam inventore, a omnis. Quidem eos numquam saepe deleniti velit! Aliquid, similique! Repudiandae cumque aliquam velit cupiditate fugiat nobis, harum blanditiis tempore voluptates quam, et earum iste.
+        p
+          | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, optio officiis. Atque quam quis alias consequatur voluptate harum eum, ad, nostrum fuga dignissimos rem deserunt eos hic. Fuga soluta animi minima iusto? Porro, officia iste?
+      .col-md-6
+        img(src="/img/inicio_nosotros.jpg", alt="About us Image", class="img-fluid")
+
+    include ./layouts/render_travels
+
+  .descuento
+    .container
+      .row
+        .col-md-6
+          .contenido
+            h3 5% off
+            p.titulo Travel to Canada
+            p.fecha July 20, 2023 - July 28, 2023
+            p.precio 2,500 USD
+
+  .container
+    h2.text-center.mt-5 Testimonials
+    include ./layouts/render_testimonials
